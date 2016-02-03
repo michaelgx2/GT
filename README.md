@@ -7,9 +7,9 @@ This is a static class and it's not thread safe. Handle multi-thread issues your
 Sample code:
 ```C#
 string text = "[English Language File]\n" + 
-              "item_box=This is a box" + 
-              "item_bed=Bed is for you to sleep" +
-              "msg_error=Error, nothing happens!" +
+              "item_box=This is a box\n" + 
+              "item_bed=Bed is for you to sleep\n" +
+              "msg_error=Error, nothing happens!\n" +
               "msg_equal=You=Me, so you are [name] and you are [age].";
 GT.LoadText(text);
 string res1=GT.G("item_box");//res1 will be "This is a box"
