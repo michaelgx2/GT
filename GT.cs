@@ -49,7 +49,7 @@ public static class GT
         return sb.ToString();
     }
 
-    private static Dictionary<string, string> GetDicFromString(string texts)
+    public static Dictionary<string, string> GetDicFromString(string texts)
     {
         Dictionary<string, string> ret = new Dictionary<string, string>();
 

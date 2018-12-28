@@ -4,6 +4,8 @@ This also can be used as a reader of configuration file. It basically reads text
 
 This is a static class and it's not thread safe. Handle multi-thread issues yourself based on your business.
 
+Actually, GT is also useful while handling config files with same '=' format.
+
 Sample code:
 ```C#
 string text = "[English Language File]\n" + 
@@ -15,3 +17,6 @@ GT.LoadText(text);
 string res1=GT.G("item_box");//res1 will be "This is a box"
 string res2=GT.G("msg_equal", "[name]", "Michael", "[age]", "18");//res2 will be "You=Me, so you are Michael and you are 18."
 ```
+
+Update 2018/12/28:
+When I use this class, sometimes I want to use 'GetDicFromString' method independently. So I changed it to public.
