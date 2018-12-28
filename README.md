@@ -1,10 +1,10 @@
 # GT
 C# helper class for multiple language loading. Can be used in Unity projects or other .net projects which default localization component is not available.
-This also can be used as a reader of configuration file. It basically reads texts with key-value pairs, like an old .inf file.
+This also can be used as a reader of configuration file. It basically reads texts with key-value pairs connected by '=', like an .inf file.
 
 This is a static class and it's not thread safe. Handle multi-thread issues yourself based on your business.
 
-Actually, GT is also useful while handling config files with same '=' format.
+.Net Framework 2.0 or above.
 
 Sample code:
 ```C#
